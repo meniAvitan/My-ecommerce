@@ -19,10 +19,10 @@ import {
 } from '../constans/productConstans';
 
 
-export const listProduct = ( {
+export const listProduct = ( 
   name = '',
   category = '',
-}) => async (dispatch) => {
+) => async (dispatch) => {
   dispatch({
     type: PRODUCT_LIST_REQUEST,
   });
