@@ -7,7 +7,7 @@ import AdminRoute from './components/AdminRoute';
 import LoadingBox from './components/LoadingBox';
 import MessageBox from './components/MessageBox';
 import PrivateRoute from './components/PrivateRoute';
-import SearchBox from './components/SearchBox';
+// import SearchBox from './components/SearchBox';
 import CartScreen from './screens/CartScreen';
 import HomeScreen from './screens/HomeScreen';
 import OrderHistoryScreen from './screens/OrderHistoryScreen';
@@ -66,13 +66,13 @@ function App() {
                             My-Ecommerce
                         </Link>
                     </div>
-                    <div>
+                    {/* <div>
                         <Route
                         render={({ history }) => (
                             <SearchBox history={history}></SearchBox>
                         )}
                         ></Route>
-                    </div>
+                    </div> */}
 
                     <div>
 

@@ -45,9 +45,10 @@ export const isAdmin = (req, res, next) =>{
   }
 }
 
-export const mailgun = mg({
-  apiKey: '583492713a5c223741f0bc58f107ce75-71b35d7e-f629ffa9',
-  domain: 'sandbox150648954b034a6f80926ca1ca7387fc.mailgun.org',
+export const mailgun = () =>
+ mg({
+  apiKey: process.env.MAILGUN_API_KEY,
+  domain: process.env.MAILGUN_DIMAIN,
 });
 
 
